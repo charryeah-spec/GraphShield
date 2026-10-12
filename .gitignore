@@ -1,0 +1,30 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+.idea/
+.vscode/
+.DS_Store
+.env
+.env.*
+*.log
+*.pem
+*.key
+.venv/
+venv/
+
+# Private/large competition assets
+data/**/*.npz
+checkpoints/
+results/
+artifacts/*.png
+artifacts/*.npz
+artifacts/**/*.npz
+artifacts/smoke/
+
+# Keep small, auditable JSON summaries under version control.
+!artifacts/*.json
+!artifacts/graphsage_oof/metrics.json
+!artifacts/graphsage_oof/oof_curves.png

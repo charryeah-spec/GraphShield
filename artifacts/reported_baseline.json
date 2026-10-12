@@ -1,0 +1,14 @@
+{
+  "status": "historical_course_report",
+  "validation_protocol": "single stratified holdout, before full-data retraining",
+  "time_proxies": "excluded from this claim",
+  "models": {
+    "GCN": {"roc_auc": 0.7535, "pr_auc": 0.0255, "f1": 0.0461, "mcc": 0.0911},
+    "GraphSAGE": {"roc_auc": 0.7803, "pr_auc": 0.0300, "f1": 0.0462, "mcc": 0.0975},
+    "GIN": {"roc_auc": 0.7696, "pr_auc": 0.0280, "f1": 0.0478, "mcc": 0.0988},
+    "RGCN": {"roc_auc": 0.7666, "pr_auc": 0.0283, "f1": 0.0477, "mcc": 0.0963},
+    "GAT": {"roc_auc": 0.7733, "pr_auc": 0.0289, "f1": 0.0469, "mcc": 0.0979},
+    "Ensemble": {"roc_auc": 0.7728, "pr_auc": 0.0288, "f1": 0.0474, "mcc": 0.0979}
+  },
+  "note": "These are transcribed baseline values, not a fresh reproduction. New claims must come from artifacts/graphsage_oof/metrics.json."
+}

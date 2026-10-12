@@ -1,0 +1,138 @@
+{
+  "generated_at": "2026-10-10T08:32:11.207072+00:00",
+  "protocol": "transductive_nested_holdout_5_fold_oof",
+  "outer_fold_is_never_used_for_early_stopping": true,
+  "time_features_enabled": false,
+  "node_id_or_edge_order_proxies_enabled": false,
+  "dataset_sha256": "7c1841efa6280da04418545a7477ab638677b4973a8ebdb36b5cffdcbbf0be68",
+  "dataset": {
+    "nodes": 579157,
+    "edges": 167559,
+    "features": 69,
+    "labeled_nodes": 386104,
+    "fraud_nodes": 4492,
+    "fraud_rate": 0.011634171104158465
+  },
+  "configuration": {
+    "folds": 5,
+    "inner_validation_fraction": 0.1,
+    "max_epochs": 80,
+    "patience": 15,
+    "hidden_dim": 64,
+    "layers": 3,
+    "fast_mode": true,
+    "seed": 42,
+    "device": "cpu",
+    "torch": "2.14.1",
+    "python": "3.11.15"
+  },
+  "primary_metrics": "mean and standard deviation across outer folds",
+  "pooled_oof_ranking_diagnostic": {
+    "roc_auc": 0.7334447653581724,
+    "pr_auc": 0.0234023188643854
+  },
+  "cross_fitted_threshold_metrics": {
+    "f1": 0.05263836924267836,
+    "precision": 0.03262086242737594,
+    "recall": 0.13624220837043632,
+    "mcc": 0.04422924215608412
+  },
+  "fold_summary": {
+    "roc_auc_mean": 0.7544261494549269,
+    "roc_auc_std": 0.012401088469258843,
+    "pr_auc_mean": 0.027181011867628075,
+    "pr_auc_std": 0.0019295820114062464,
+    "f1_mean": 0.051514696131486536,
+    "f1_std": 0.0076259950590239775,
+    "mcc_mean": 0.04383348157571868,
+    "mcc_std": 0.010401038515928296
+  },
+  "folds": [
+    {
+      "roc_auc": 0.7674466888269387,
+      "pr_auc": 0.028821978420932974,
+      "f1": 0.05858281283652811,
+      "precision": 0.03632478632478633,
+      "recall": 0.15127919911012236,
+      "mcc": 0.0519420000050075,
+      "fold": 1,
+      "inner_early_stop_roc_auc": 0.7524957870563407,
+      "threshold_selected_on_inner_validation": 0.39797648787498474,
+      "fit_nodes": 277994,
+      "early_stop_nodes": 30889,
+      "evaluation_nodes": 77221,
+      "seconds": 53.509
+    },
+    {
+      "roc_auc": 0.7315097115467606,
+      "pr_auc": 0.023819347740955024,
+      "f1": 0.04973938942665674,
+      "precision": 0.028713892709766164,
+      "recall": 0.185761957730812,
+      "mcc": 0.045421610765320176,
+      "fold": 2,
+      "inner_early_stop_roc_auc": 0.7446941544323269,
+      "threshold_selected_on_inner_validation": 0.4593253433704376,
+      "fit_nodes": 277994,
+      "early_stop_nodes": 30889,
+      "evaluation_nodes": 77221,
+      "seconds": 28.221
+    },
+    {
+      "roc_auc": 0.7562921906128236,
+      "pr_auc": 0.026573907408356575,
+      "f1": 0.047850942197755666,
+      "precision": 0.02954248366013072,
+      "recall": 0.12583518930957685,
+      "mcc": 0.03814433580339736,
+      "fold": 3,
+      "inner_early_stop_roc_auc": 0.7558847546638905,
+      "threshold_selected_on_inner_validation": 0.4335799217224121,
+      "fit_nodes": 277994,
+      "early_stop_nodes": 30889,
+      "evaluation_nodes": 77221,
+      "seconds": 36.513
+    },
+    {
+      "roc_auc": 0.7628294713474064,
+      "pr_auc": 0.027466001685919623,
+      "f1": 0.04014272970561998,
+      "precision": 0.033482142857142856,
+      "recall": 0.05011135857461024,
+      "mcc": 0.027128686974104914,
+      "fold": 4,
+      "inner_early_stop_roc_auc": 0.7739669278220336,
+      "threshold_selected_on_inner_validation": 0.3982464075088501,
+      "fit_nodes": 277994,
+      "early_stop_nodes": 30889,
+      "evaluation_nodes": 77221,
+      "seconds": 277.416
+    },
+    {
+      "roc_auc": 0.7540526849407058,
+      "pr_auc": 0.02922382408197619,
+      "f1": 0.06125760649087221,
+      "precision": 0.037450396825396824,
+      "recall": 0.16815144766146994,
+      "mcc": 0.056530774330763464,
+      "fold": 5,
+      "inner_early_stop_roc_auc": 0.767614164614558,
+      "threshold_selected_on_inner_validation": 0.41964423656463623,
+      "fit_nodes": 277995,
+      "early_stop_nodes": 30889,
+      "evaluation_nodes": 77220,
+      "seconds": 90.967
+    }
+  ],
+  "runtime_seconds": 496.918,
+  "confusion_matrix_cross_fitted_thresholds": [
+    [
+      363463,
+      18149
+    ],
+    [
+      3880,
+      612
+    ]
+  ]
+}

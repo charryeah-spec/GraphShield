@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-10-10T07:53:36.961215+00:00",
+  "dataset": {
+    "nodes": 579157,
+    "edges": 167559,
+    "raw_features": 17,
+    "observed_edge_types": 11,
+    "train_nodes": 386104,
+    "test_nodes": 193053,
+    "normal_train_nodes": 381612,
+    "fraud_train_nodes": 4492,
+    "fraud_rate": 0.011634171104158465,
+    "train_test_overlap": 0
+  },
+  "temporal_semantics": {
+    "verified_timestamp_columns": [],
+    "status": "no documented timestamp is present in the supplied NPZ schema"
+  },
+  "proxy_audit": {
+    "node_id_best_orientation_auc": 1.0,
+    "fraud_id_min": 0,
+    "fraud_id_max": 6784,
+    "normal_id_min": 6785,
+    "normal_id_max": 579156,
+    "perfect_class_block_ordering": true,
+    "raw_feature_best_orientation_auc": {
+      "x[0]": 0.512637,
+      "x[1]": 0.507538,
+      "x[2]": 0.710205,
+      "x[3]": 0.70876,
+      "x[4]": 0.669567,
+      "x[5]": 0.696523,
+      "x[6]": 0.708028,
+      "x[7]": 0.695001,
+      "x[8]": 0.707407,
+      "x[9]": 0.675496,
+      "x[10]": 0.634619,
+      "x[11]": 0.688604,
+      "x[12]": 0.682675,
+      "x[13]": 0.670385,
+      "x[14]": 0.668801,
+      "x[15]": 0.619991,
+      "x[16]": 0.622748
+    },
+    "edge_order_cells_changed_after_row_shuffle": 0.247206
+  },
+  "risk_level": "critical",
+  "decision": "exclude node ID, neighbor-ID derivatives, and edge row order from production features; use them only as leakage negative controls"
+}
